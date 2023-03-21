@@ -1,7 +1,7 @@
 const handleGetText = require("./GetText");
 
 const handleFunctions = async ({ client, event, payload }) => {
-  if (event?.text.split(" ")[1] === "/trans") {
+  if (event?.text.split(" ")[1] === "/gtt") {
     handleGetText({ client, event, payload });
   } else {
     try {
